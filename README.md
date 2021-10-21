@@ -1,3 +1,3 @@
-# P.verrucosa_seasonality_trophic_status
+# P.verrucosa seasonality of parameters and trophic  and status
 
 This are the codes for.....
