@@ -32,7 +32,9 @@ install.packages("SIBER")
 library(SIBER)
 set.seed(1)
 
-setwd("C:/Users/Nauras/Dropbox/Nauras_Arjen/Analysis/R_scripts/SIBER")
+# set working directory of input files
+
+setwd(...)
 
 isotopes <- read.csv("siber_data_total.csv", header=T)
 
@@ -82,6 +84,7 @@ yhat.gp<-predict(lm.gp) # predicted values
 lm.gp.red<-lm(Y~1) # this is the model reduced by the group factor: only estimates an overall mean
 
 # Read in the source code developed by Turner et al. (see above) for the following functions
+# You can find this file in the repository and it should be placed in your working directory of input files
 
 source('Turner.et.al.ecology.source.r')
 
