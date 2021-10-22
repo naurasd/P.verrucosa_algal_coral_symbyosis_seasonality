@@ -22,15 +22,18 @@
 
 ### Calculate the overlap of SEAcs ### 
 
+# install and load the SIBER package
+
+install.packages("SIBER")
+library(SIBER)
+set.seed(1)
+
 # read input data 
 
 # headings of columns in .csv must be "iso1" (d13C), "iso2" (d15N), "group" (host or symbionts), and "community" (set to "1" for all of our entries, as we are only dealing with a single overall community)
 # all headings & columns must be present
 # only include values for coral fragments where within each group (host or symbionts) both isotopic values exist
-
-install.packages("SIBER")
-library(SIBER)
-set.seed(1)
+# check the file siber_data_total.csv in the repository
 
 # set working directory of input files
 
@@ -64,6 +67,7 @@ prop.sea.over.1
 
 # Read in the the input data
 # this should be a .csv file with 3 columns: "group" (host and symbionts), "x" (d13C), and "y" (d15N)
+# check the file iso_niche_data.csv in the repository
 
 iso<-read.csv("iso_niche_data.csv",header=T)
 
@@ -113,7 +117,8 @@ disp.dif$mdc
 disp.dif$mnn
 disp.dif$ecc
 
-### PERMUTATION PROCEDURE to generate p-value###
+
+### PERMUTATION PROCEDURE to generate p-value ###
 
 # Describe a function that needs
 # x = the full linear model
