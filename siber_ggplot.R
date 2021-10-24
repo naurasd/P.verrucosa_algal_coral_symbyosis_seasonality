@@ -1,14 +1,35 @@
-library(devtools)
+## The following script uses parts of a script by
+
+## Jackson, A.L., Parnell, A.C., Inger R., & Bearhop, S. 2011. Comparing isotopic niche 
+## widths among and within communities: SIBER - Stable Isotope Bayesian Ellipses in R. 
+## Journal of Animal Ecology, 80: 595-602. 
+## DOI: https://doi.org/10.1111/j.1365-2656.2011.01806.x 
+
+# See https://github.com/AndrewLJackson/SIBER/blob/master/vignettes/Plot-SIA-ggplot2.Rmd
+
+# load packages
+
+library(tidyverse) # also loads ggplot2
+
+# install and load package ggConvexHull
+
 devtools::install_github("cmartin/ggConvexHull")
 library(ggConvexHull)
-library(SIBER)
-library(tidyverse)
 
-# import the data. 
+# set working directory for input and output files
 
-setwd("C:/Users/Nauras/Dropbox/Nauras_Arjen/Analysis/R_scripts/SIBER")
+setwd(...)
+
+# read in data to be plotted
+# only include coral fragments where values exist for both for groups (host and symbiont) and for both carbon and nitrogen stable isotopes
+# see the siber_data_plot.csv file in the repository aas example
+# column "community" was set to "1" for all of our entries, as we are only dealing with a single overall community
 
 siber.data <- read.csv("siber_data_plot.csv", header=T)
+
+# The following command creating the object siber_data and the explanations were taken from Jackson et al. (2011, see above).
+# The command seems necessary for subsequent plotting as undertaken by the authors.
+# See https://github.com/AndrewLJackson/SIBER/blob/master/vignettes/Plot-SIA-ggplot2.Rmd
 
 # make a copy of our data for use here in this example, and 
 # set the columns group and community to be factor type using dplyr.
@@ -44,7 +65,7 @@ siber.plot <- ggplot(data = siber_data,
                type = "norm",
                geom = "polygon") 
 
-ggsave(siber.plot,file="siber_plot.pdf",path="C:/Users/Nauras/Dropbox/Nauras_Arjen/Analysis/R_scripts/SIBER",width=7,height=5)
+ggsave(siber.plot,file="siber_plot.pdf",width=7,height=5)
 
 
 
