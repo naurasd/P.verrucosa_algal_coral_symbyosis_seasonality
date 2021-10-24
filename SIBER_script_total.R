@@ -32,7 +32,7 @@ set.seed(1)
 
 # headings of columns in .csv must be "iso1" (d13C), "iso2" (d15N), "group" (host or symbionts), and "community" (set to "1" for all of our entries, as we are only dealing with a single overall community)
 # all headings & columns must be present
-# only include values for coral fragments where within each group (host or symbionts) both isotopic values exist
+# only include coral fragments where values exist for both for groups (host and symbiont) and for both carbon and nitrogen stable isotopes
 # check the file siber_data_total.csv in the repository
 
 # set working directory of input files
@@ -67,6 +67,7 @@ prop.sea.over.1
 
 # Read in the the input data
 # this should be a .csv file with 3 columns: "group" (host and symbionts), "x" (d13C), and "y" (d15N)
+# only include coral fragments where values exist for both for groups (host and symbiont) and for both carbon and nitrogen stable isotopes
 # check the file iso_niche_data.csv in the repository
 
 iso<-read.csv("iso_niche_data.csv",header=T)
