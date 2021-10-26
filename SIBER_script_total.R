@@ -103,6 +103,7 @@ gp.m<-group.means(Y,group) # finds the group means for the raw data
 gp.m
 
 # CONTRASTS (distance of group SEAc centroids (in per mil))
+# This is the value reported as distance between host and symbiont SEAcs in the paper
 mean.dif<-as.vector(dist(as.matrix(gp.m)))
 mean.dif
 
@@ -110,6 +111,7 @@ mean.dif
 #mdc = mean centroid distance
 #mnn = mean nearest neighbor
 #ecc = eccentricity
+#...needed for eprmutation
 
 disp.dif<-ds.dif(ex1.ds) # Dimension names not given by output
 
