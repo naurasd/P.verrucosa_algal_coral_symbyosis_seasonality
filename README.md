@@ -1,3 +1,51 @@
 # P.verrucosa seasonality of parameters and trophic  and status
 
-This are the codes for.....
+These are the R scripts used in:
+
+XXX
+
+Boxplots for biological data as shown in the manuscript were generated with bio_boxplots.R script. Input data for this are included in the R_bio_means.xlsx and R_bio_boxplot.xlsx files. See the R script for details.
+
+For this, we used R packages from tidyverse and the package ggforce:
+
+Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). 
+Welcome to the tidyverse.
+Journal of Open Source Software, 4(43), 1686. doi: 10.21105/joss.01686. 
+
+Pedersen, T.L. (2019).
+ggforce. Accelerating 'ggplot2'.
+https://github.com/thomasp85/ggforce/
+
+The stable isotope data used for the SIBER analysis were visualized using the siber_ggplot.R script with siber_data_plot.csv as input data. 
+
+The SIBER analysis was run with the SIBER_script_total.R script. Input data are stored in the siber_data_total.csv and iso_niche_data.csv files. See the script for details. This includes the estimation of host tissue and Symbiodiniaceae standard ellipse areas corrected for sample size (SEAc) and the calculation of SEAc overlap. Further, the distance between SEAc centroids is calculated and the residual permutation test to assess significance of trophic niche separation is carried out. This script relies on a source code by Turner et al. (2010; see below), which is the Turner.et.al.ecology.source.r script. It is read into R in the SIBER_script_total.R script.
+
+For the stable isotope visualization and analysis with SIBER, we used parts of the scripts developed by:
+
+Conti-Jerpe, I.E., Thompson, P.D., Wong, C.W.M., Oliveira, N.L., Duprey, N.N., Moynihan, M.A., BAker, D.M. 2020. 
+Trophic strategy and bleaching resistance in reef-building corals. 
+Science Advances, 6: eaaz5443. 
+DOI: https://doi.org/10.1126/sciadv.aaz5443
+
+Their scripts in turn are based on scripts, an R package (SIBER) and theory by: 
+
+Jackson, A.L., Parnell, A.C., Inger R., & Bearhop, S. 2011. 
+Comparing isotopic niche widths among and within communities: SIBER - Stable Isotope Bayesian Ellipses in R. 
+Journal of Animal Ecology, 80: 595-602. 
+DOI: https://doi.org/10.1111/j.1365-2656.2011.01806.x 
+
+Turner, T.F., Collyer, M.L. & Krabbenhoft, T.J. 2010. 
+A general hypothesis-testing framework for stable isotope ratios in ecological studies. 
+Ecology, 91: 2227-2233. 
+DOI: https://doi.org/10.1890/09-1454.1
+
+We also used R packages from tidyverse and the ggconvexhull R package:
+
+Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). 
+Welcome to the tidyverse.
+Journal of Open Source Software, 4(43), 1686. doi: 10.21105/joss.01686. 
+
+Martin, C.A. (2017).
+ggConvexHull. Add a convex hull geom to ggplot2.
+http://github.com/cmartin/ggConvexHull
+
