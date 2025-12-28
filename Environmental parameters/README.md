@@ -1,7 +1,7 @@
 # Input data, analysis and figures of environmental parameters
 ## Input data
 The file `Environmental Data file Tilstra et al.xlsx` contains five sheets:
-- The sheet `Temperature` contains all Sea Surface Temperature (SST) values in °C measured every 30 or 60 minutes from 1 January 2017 to 31 January 2018
+- The sheet `Temperature` contains all water temperature measurements in °C recorded every 30 or 60 minutes from 1 January 2017 to 31 January 2018
   
 - The sheet `all_monthly` contains all values of all parameters which were measured/calculated monthly on three consecutive days from January 2017 to January 2018:
   - Salinity in Practical Salinity Units (PSU)
