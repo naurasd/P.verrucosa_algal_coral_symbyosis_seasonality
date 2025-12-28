@@ -12,7 +12,7 @@ The file `Environmental Data file Tilstra et al.xlsx` contains five sheets:
   - Dissolved inorganic phosphorus (DIP) in uM PO<sub>4</sub><sup>3-</sup>
   - Dissolved inorganic nitrogen (DIN) in uM N calculated as the sum of dissolved nitrate, nitrite and ammonium
   - The ratio of DIN:DIP as the calculated values of DIN divided by the respective DIP value
-  - 
+    
 - The sheet `all_bimonthly` contains all values of all parameters which were measured/calculated bimonthly on two consecutive days from January 2017 to January 2018:
   - Dissolved oxygen (DO) in mg L<sup>-1</sup> (eight measurements each day) 
   - Dissolved organic carbon (DOC) in uM C L<sup>-1</sup> (eight measurements each day)
