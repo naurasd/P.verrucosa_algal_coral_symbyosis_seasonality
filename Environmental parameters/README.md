@@ -24,3 +24,7 @@ The file `Environmental Data file Tilstra et al.xlsx` contains five sheets:
   - For water temperature and monthly recorded parameters, all measurements of the months before and within the months of coral fragment sampling were taken into account (i.e., March and April 2017 for spring, July and August 2017 for summer, October and November 2017 for fall and December 2017 and January 2018 for winter)
   - For bimonthly recorded parameters, all measurements of the months before and after or within the month of coral fragment sampling were used (i.e., March and May 2017 for spring, July and September 2017 for summer, November 2017 for fall and January 2018 for winter)
  
+- The sheet `month_mean_sem_env` contains the mean and standard error of the mean (SEM) for all environmental parameters (except TDN, which was not further analysed):
+  - For water temperature and monthly recorded parameters, mean and SEM were calculated for all measurements of each month
+  - For bimonthly recorded parameters, mean and SEM were calculated for all measurements of each of the months data was recorded in
+ 
