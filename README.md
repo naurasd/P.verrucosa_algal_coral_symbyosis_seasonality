@@ -1,12 +1,10 @@
-# P.verrucosa seasonality of parameters and trophic  and status
+# Environmental variability drives carbon and nitrogen allocation in the coral-algal symbiosis
 
-These are the R scripts used in:
+In this repository you will find data and R scripts used in the manuscript by Tilstra and Daraghmeh et al. (2026).
 
-XXX
+Data files and scripts can be found in [Environmental parameters](tree/main/Environmental%20parameters).
 
-Boxplots for biological data as shown in the manuscript were generated with bio_boxplots.R script. Input data for this are included in the R_bio_means.xlsx and R_bio_boxplot.xlsx files. See the R script for details.
-
-For this, we used R packages from tidyverse and the package ggforce:
+For this analysis, we used the following R packages / collections:
 
 Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). 
 Welcome to the tidyverse.
@@ -38,11 +36,6 @@ Turner, T.F., Collyer, M.L. & Krabbenhoft, T.J. 2010.
 A general hypothesis-testing framework for stable isotope ratios in ecological studies. 
 Ecology, 91: 2227-2233. 
 DOI: https://doi.org/10.1890/09-1454.1
-
-We also used R packages from tidyverse and the ggconvexhull R package:
-
-Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). 
-Welcome to the tidyverse.
 Journal of Open Source Software, 4(43), 1686. doi: 10.21105/joss.01686. 
 
 Martin, C.A. (2017).
