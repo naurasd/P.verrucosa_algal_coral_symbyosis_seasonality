@@ -2,7 +2,7 @@
 
 In this repository you will find data and R scripts used in the manuscript by Tilstra and Daraghmeh et al. (2026).
 
-Data files and scripts can be found in [Environmental parameters](tree/main/Environmental%20parameters).
+Data files and scripts can be found in [Environmental parameters](Environmental parameters).
 
 For this analysis, we used the following R packages / collections:
 
