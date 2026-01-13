@@ -7,14 +7,19 @@ Data files and scripts can be found in [Environmental parameters](Environmental%
 [Environmental parameters](Environmental%20parameters) contains `.xlsx` files with input data and associated `R` scripts for the analysis and (supplementary) figures / tables as used in the manuscript for the following environmental parameters:
 - water temperature
 - photosynthetically active radiation
+- salinity
 - dissolved oxygen
 - dissolved nutrients (nitrite, nitrate, ammonium, phosphate)
 - dissolved carbon
 
 [Biological parameters](Biological%20parameters) contains `.xlsx` files with input data and associated `R` scripts for the analysis and (supplementary) figures / tables as used in the manuscript for the following biological parameters:
+- Density, mitotic index and chlorophyll *a* content of algal symbiont cells in coral host tissue
+- Elemental and stable isotope composition of nitrogen and organic carbon of coral host tissue and algal symbionts
+- relative *nifH* gene copy numbers (diazotrophy)
 
+[Biological parameters](Biological%20parameters) also contains data and code used for combined biological-environmental correlation analysis.
 
-For this analysis, we used the following R packages / collections:
+For our analysis, we used the following `R` packages / collections:
 
 Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). 
 Welcome to the tidyverse.
