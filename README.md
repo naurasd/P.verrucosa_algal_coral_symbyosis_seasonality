@@ -28,10 +28,6 @@ Journal of Open Source Software, 4(43), 1686. doi: 10.21105/joss.01686.
 Pedersen, T.L. (2025).
 ggforce: Accelerating 'ggplot2'. R package version 0.5.0.9000. [https://github.com/thomasp85/ggforce/](https://ggforce.data-imaginist.com)
 
-The stable isotope data used for the SIBER analysis were visualized using the siber_ggplot.R script with siber_data_plot.csv as input data. 
-
-The SIBER analysis was run with the SIBER_script_total.R script. Input data are stored in the siber_data_total.csv and iso_niche_data.csv files. See the script for details. This includes the estimation of host tissue and Symbiodiniaceae standard ellipse areas corrected for sample size (SEAc) and the calculation of SEAc overlap. Further, the distance between SEAc centroids is calculated and the residual permutation test to assess significance of trophic niche separation is carried out. This script relies on a source code by Turner et al. (2010; see below), which is the Turner.et.al.ecology.source.r script. It is read into R in the SIBER_script_total.R script.
-
 For the stable isotope visualization and analysis with SIBER, we used parts of the scripts developed by:
 
 Conti-Jerpe, I.E., Thompson, P.D., Wong, C.W.M., Oliveira, N.L., Duprey, N.N., Moynihan, M.A., BAker, D.M. 2020. 
