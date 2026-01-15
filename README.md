@@ -19,7 +19,7 @@ Data files and scripts can be found in [Environmental parameters](Environmental%
 
 [Biological parameters](Biological%20parameters) also contains data and code used for combined biological-environmental correlation analysis.
 
-For our analysis, we used the following `R` packages / collections:
+<ins>For our analysis, we used the following `R` packages / collections:</ins>
 
 Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). 
 Welcome to the tidyverse.
