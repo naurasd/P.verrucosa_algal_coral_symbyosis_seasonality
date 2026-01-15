@@ -25,9 +25,8 @@ Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Ha
 Welcome to the tidyverse.
 Journal of Open Source Software, 4(43), 1686. doi: 10.21105/joss.01686. 
 
-Pedersen, T.L. (2019).
-ggforce. Accelerating 'ggplot2'.
-https://github.com/thomasp85/ggforce/
+Pedersen, T.L. (2025).
+ggforce: Accelerating 'ggplot2'. R package version 0.5.0.9000. [https://github.com/thomasp85/ggforce/](https://ggforce.data-imaginist.com)
 
 The stable isotope data used for the SIBER analysis were visualized using the siber_ggplot.R script with siber_data_plot.csv as input data. 
 
@@ -40,7 +39,7 @@ Trophic strategy and bleaching resistance in reef-building corals.
 Science Advances, 6: eaaz5443. 
 DOI: https://doi.org/10.1126/sciadv.aaz5443
 
-Their scripts in turn are based on scripts, an R package (SIBER) and theory by: 
+Their scripts in turn are based on scripts, an `R` package (SIBER) and theory by: 
 
 Jackson, A.L., Parnell, A.C., Inger R., & Bearhop, S. 2011. 
 Comparing isotopic niche widths among and within communities: SIBER - Stable Isotope Bayesian Ellipses in R. 
@@ -52,8 +51,3 @@ A general hypothesis-testing framework for stable isotope ratios in ecological s
 Ecology, 91: 2227-2233. 
 DOI: https://doi.org/10.1890/09-1454.1
 Journal of Open Source Software, 4(43), 1686. doi: 10.21105/joss.01686. 
-
-Martin, C.A. (2017).
-ggConvexHull. Add a convex hull geom to ggplot2.
-http://github.com/cmartin/ggConvexHull
-
