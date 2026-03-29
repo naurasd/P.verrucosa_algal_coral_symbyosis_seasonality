@@ -1,6 +1,6 @@
 # Environmental variability drives carbon and nitrogen allocation in the coral-algal symbiosis
 
-In this repository you will find data and `R` scripts used in the manuscript by Tilstra and Daraghmeh et al. (2026).
+In this repository you will find data and `R` scripts used in the manuscript "Environmental variability drives carbon and nitrogen allocation in the coral–algal symbiosis" by Tilstra and Daraghmeh et al. (2026).
 
 Data files and scripts can be found in [Environmental parameters](Environmental%20parameters) and [Biological parameters](Biological%20parameters).
 
