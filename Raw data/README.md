@@ -1,6 +1,6 @@
 This directory contains all raw data collected for the project.
 
-[Environmental Raw Data](Environmental%20Raw%20Data.xlsx) contains all raw data measured for the following parameters:
+[Environmental Raw Data.xlsx](Environmental%20Raw%20Data.xlsx) contains all raw data measured for the following parameters:
 - water temperature
 - photosynthetically active radiation
 - salinity
