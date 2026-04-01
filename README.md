@@ -10,7 +10,8 @@ Raw data is found in [Raw data](Raw%20data), code and input data for analyses an
 - salinity
 - dissolved oxygen
 - dissolved nutrients (nitrite, nitrate, ammonium, phosphate)
-- dissolved carbon
+- total dissolved carbon
+- total dissolved nitrogen
 
 [Biological parameters](Biological%20parameters) contains `.xlsx` files with input data and associated `R` scripts for the analysis and (supplementary) figures / tables as used in the manuscript for the following biological parameters:
 - Density, mitotic index and chlorophyll *a* content of algal symbiont cells in coral host tissue
