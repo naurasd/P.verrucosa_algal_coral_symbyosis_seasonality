@@ -1,13 +1,20 @@
 This directory contains all raw data collected for the project.
 
 [Environmental Raw Data.xlsx](Environmental%20Raw%20Data.xlsx) contains all raw data measured for the following parameters:
-- water temperature
-- photosynthetically active radiation
-- salinity
-- dissolved oxygen
-- dissolved nutrients (nitrite, nitrate, ammonium, phosphate)
-- total dissolved carbon
-- total dissolved nitrogen
+- The sheet `Temperature` contains all water temperature measurements in °C recorded every 30 or 60 minutes from 1 January 2017 to 31 January 2018
+  
+- The sheet `all_monthly` contains all values of all parameters which were measured monthly on three consecutive days from January 2017 to January 2018:
+  - Salinity in Practical Salinity Units (PSU)
+  - Photosynthetically Active Radiation (PAR) in umol photons m<sup>-2</sup>s<sup>-1</sup>
+  - Dissolved nitrate in uM NO<sub>3</sub><sup>-</sup>
+  - Dissolved nitrite in uM NO<sub>2</sub><sup>-</sup>
+  - Dissolved ammonium in uM NH<sub>4</sub><sup>+</sup>
+  - Dissolved inorganic phosphorus (DIP) in uM PO<sub>4</sub><sup>3-</sup>
+    
+- The sheet `all_bimonthly` contains all values of all parameters which were measured bimonthly on two consecutive days from January 2017 to January 2018:
+  - Dissolved oxygen (DO) in mg L<sup>-1</sup> (eight measurements each day) 
+  - Dissolved organic carbon (DOC) in uM C L<sup>-1</sup> (eight measurements each day)
+  - Total dissolved nitrogen (TDN) in uM N L<sup>-1</sup> (eight measurements each day)
 
 In [Coral fragment info + surface area.xlsx](Coral%20fragment%20info%20%2B%20surface%20area.xlsx) you find general info about the collected coral fragments:
 - sampling dates
