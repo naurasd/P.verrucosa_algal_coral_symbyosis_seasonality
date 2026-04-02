@@ -1,6 +1,11 @@
-# Input data, analysis and figures of environmental parameters
-## Input data
-The file `Environmental Data file Tilstra et al.xlsx` is used for all of the here presented R scripts. It contains five sheets:
+# Input data and code for statistical analysis and plotting of environmental parameters
+The file [Environmental_Parameters.xlsx](Environmental_Parameters.xlsx) contains input data formatted for the statistical analysis of seasonal differentiation of environmental parameters. It is used in the `R` script [Environmental_parameters_ANOVA_KW_Welch.R](Environmental_parameters_ANOVA_KW_Welch.R) which performs the following analyses for each parameter:
+ - Shapiro-Wilk test to check for normality of data distribution (normally distributed parameters were tested for homogeneity of variances using Levene’s test)
+ - Parameters that were normally distributed and homoscedastic, either in their raw form or after transformation (square-root transformation), were analyzed using a one-way ANOVA followed by Tukey’s post-hoc test (for ANOVA p < 0.05)
+ - When parameters were normally distributed but violated homogeneity of variances, Welch’s ANOVA was used instead, followed by Games–Howell post-hoc comparisons
+ - Parameters that remained non-normal after transformation were analyzed using non-parametric Kruskal-Wallis rank-sum tests with Dunn’s post-hoc test and Bonferroni correction (for Kruskal-Wallis p < 0.05)
+
+The file [Environmental Data file Tilstra et al.xlsx](Environmental%20Data%20file%20Tilstra%20et%20al.xlsx) is used as input data for the remaining two `R`  scripts:
 - The sheet `Temperature` contains all water temperature measurements in °C recorded every 30 or 60 minutes from 1 January 2017 to 31 January 2018
   
 - The sheet `all_monthly` contains all values of all parameters which were measured/calculated monthly on three consecutive days from January 2017 to January 2018:
@@ -27,4 +32,8 @@ The file `Environmental Data file Tilstra et al.xlsx` is used for all of the her
 - The sheet `month_mean_sem_env` contains the mean and standard error of the mean (SEM) for all environmental parameters (except TDN, which was not further analysed):
   - For water temperature and monthly recorded parameters, mean and SEM were calculated for all measurements of each month
   - For bimonthly recorded parameters, mean and SEM were calculated for all measurements of each of the months data was recorded in
+ 
+The `R` file [Fig_1C-J_S1_S2.R](Fig_1C-J_S1_S2.R) is used to plot the environmental data as shown in Figure 1C-J and Supplementary Figures S1 and S2. It denotes statistical differences between seasons for each parameter as assessed in [Environmental_parameters_ANOVA_KW_Welch.R](Environmental_parameters_ANOVA_KW_Welch.R).
+ 
+The `R` file [Fig_S3.R](Fig_S3.R) is used to analyze and plot the environmental data as shown in Supplementary Figure S3. It assesses collinearity among environmental paramaters that exhibited seasonal variability (see analysis above) through Pearson correlations and also plots the results. The script also performs hierarchical clustering and plots a corresponding dendrogram, further illustrating collinearity structure among environmental parameters.
  
