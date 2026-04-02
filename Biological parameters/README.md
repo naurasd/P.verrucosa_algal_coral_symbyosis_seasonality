@@ -39,4 +39,4 @@ The `R` file [Fig_S4.R](Fig_S4.R) is used to plot the _nifH_ data as shown in Su
 
 The `R` file [Fig_S7.R](Fig_S7.R) is used to plot the isotopic data as shown in Supplementary Figure S7 in the mansucript. It denotes statistical differences between seasons for each parameter as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
 
-The file [Algal symbiont data + nifH.xlsx[(Algal%20symbiont%20data%20%2B%20nifH.xlsx) is the same file as in the Raw Data directory, and is only used as input data for [Fig_S9.R](Fig_S9.R) to plot mean and standard error for 16S rRNA gene qPCR values as shown in Supplemenmtary Figure S9 in the manuscript.
+The file [Algal symbiont data + nifH.xlsx](Algal%20symbiont%20data%20%2B%20nifH.xlsx) is the same file as in the Raw Data directory, and is only used as input data for [Fig_S9.R](Fig_S9.R) to plot mean and standard error for 16S rRNA gene qPCR values as shown in Supplemenmtary Figure S9 in the manuscript.
