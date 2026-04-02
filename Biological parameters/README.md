@@ -5,39 +5,36 @@ The file [Biological_Parameters.xlsx](Biological_Parameters.xlsx) contains input
  - When parameters were normally distributed but violated homogeneity of variances, Welch’s ANOVA was used instead, followed by Games–Howell post-hoc comparisons
  - Parameters that remained non-normal after transformation were analyzed using non-parametric Kruskal-Wallis rank-sum tests with Dunn’s post-hoc test and Bonferroni correction (for Kruskal-Wallis p < 0.05)
 
-The file [Biological Data file Tilstra et al.xlsx](Biological%20Data%20file%20Tilstra%20et%20al.xlsx) is used as input data for the remaining two `R`  scripts:
-- The sheet `Temperature` contains all water temperature measurements in °C recorded every 30 or 60 minutes from 1 January 2017 to 31 January 2018
+The file [Biological Data file Tilstra et al.xlsx](Biological%20Data%20file%20Tilstra%20et%20al.xlsx) is used as input data for the remaining `R` scripts:
+- The sheet `symbionts_chla_MI_nifH` contains the following data:
+  - Algal symbiont density in cells x10<sup>6</sup> cm<sup>-2</sup>
+  - Mitotic index of algal symbiont cells in %
+  - Chlorophyll _a_ content of algal symbionts in pg cell<sup>-1</sup>
+  - Relative _nifH_ gene abundance as qPCR Ct values and as fold change relative to the sample with the lowest abundance
   
-- The sheet `all_monthly` contains all values of all parameters which were measured/calculated monthly on three consecutive days from January 2017 to January 2018:
-  - Salinity in Practical Salinity Units (PSU)
-  - Photosynthetically Active Radiation (PAR) in umol photons m<sup>-2</sup>s<sup>-1</sup>
-  - Dissolved nitrate in uM NO<sub>3</sub><sup>-</sup>
-  - Dissolved nitrite in uM NO<sub>2</sub><sup>-</sup>
-  - Dissolved ammonium in uM NH<sub>4</sub><sup>+</sup>
-  - Dissolved inorganic phosphorus (DIP) in uM PO<sub>4</sub><sup>3-</sup>
-  - Dissolved inorganic nitrogen (DIN) in uM N calculated as the sum of dissolved nitrate, nitrite and ammonium
-  - The ratio of DIN:DIP as the calculated values of DIN divided by the respective DIP value
+- The sheet `elemental_and_isotopic_data` contains the following data separately for coral host tissue and algal symbionts:
+  - δ<sup>15</sup>N and δ<sup>13</sup>C in ‰
+  - organic carbon and nitrogen content in % and the calculated carbon:nitrogen ratio
+  - the calculated difference between coral host tissue and algal symbiont δ<sup>15</sup>N and δ<sup>13</sup>C in ‰ for each sample
     
-- The sheet `all_bimonthly` contains all values of all parameters which were measured/calculated bimonthly on two consecutive days from January 2017 to January 2018:
-  - Dissolved oxygen (DO) in mg L<sup>-1</sup> (eight measurements each day) 
-  - Dissolved organic carbon (DOC) in uM C L<sup>-1</sup> (eight measurements each day)
-  - Total dissolved nitrogen (TDN) in uM N L<sup>-1</sup> (eight measurements each day)
-  - Dissolved organic nitrogen (DON) in uM N L<sup>-1</sup> calculated as TDN-DIN using the calculated DIN value of the same date
-  - The ratio of DOC:DON as DOC divided by the respective calculated DON values
+- The sheet `bio + env data` contains all data of biological and environmental parameters formatted for Pearson correlation analysis
+  
+- The sheet `season_mean_sem_bio` contains the seasonal mean and standard error of the mean (SEM) for all biological parameters
  
-- The sheet `season_mean_sem_env` contains the seasonal mean and standard error of the mean (SEM) for all environmental parameters (except TDN, which was not further analysed):
-  - For water temperature and monthly recorded parameters, all measurements of the months before and within the months of coral fragment sampling were taken into account (i.e., March and April 2017 for spring, July and August 2017 for summer, October and November 2017 for fall and December 2017 and January 2018 for winter)
-  - For bimonthly recorded parameters, all measurements of the months before and after or within the month of coral fragment sampling were used (i.e., March and May 2017 for spring, July and September 2017 for summer, November 2017 for fall and January 2018 for winter)
+The `R` file [Fig_2B-D.R](Fig_2B-D.R) is used to plot the biological data as shown in Figure 2B-D in the mansucript. It denotes statistical differences between seasons for each parameter as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
  
-- The sheet `month_mean_sem_env` contains the mean and standard error of the mean (SEM) for all environmental parameters (except TDN, which was not further analysed):
-  - For water temperature and monthly recorded parameters, mean and SEM were calculated for all measurements of each month
-  - For bimonthly recorded parameters, mean and SEM were calculated for all measurements of each of the months data was recorded in
- 
-The `R` file [Fig_1C-J_S1_S2.R](Fig_1C-J_S1_S2.R) is used to plot the environmental data as shown in Figure 1C-J and Supplementary Figures S1 and S2. It denotes statistical differences between seasons for each parameter as assessed in [Environmental_parameters_ANOVA_KW_Welch.R](Environmental_parameters_ANOVA_KW_Welch.R).
- 
-The `R` file [Fig_S3.R](Fig_S3.R) is used to analyze and plot the environmental data as shown in Supplementary Figure S3. It assesses collinearity among environmental paramaters that exhibited seasonal variability (see analysis above) through Pearson correlations and also plots the results. The script also performs hierarchical clustering and plots a corresponding dendrogram, further illustrating collinearity structure among environmental parameters.
- 
+The `R` file [Fig_2E_S5.R](Fig_2E_S5.R) is used to analyze and plot the biolgical and environmental data as shown in Figure 2E and Supplementary Figure S5 in the manuscript. It assesses correlation between environmental and biological paramaters and also plots the results.
 
+The `R` file [Fig_3A_D_E_S6.R](Fig_3A_D_E_S6.R) is used to plot the biological data as shown in Figure 3A, 3D and 3E and Supplementary Figure S6 in the mansucript. It denotes statistical differences between seasons for each parameter as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
 
+The `R` file [Fig_3B.R](Fig_3B.R) is used to perform linear regression analysis and plot the data shown in Figure 3B in the manuscript.
 
-The SIBER analysis was run with the SIBER_script_total.R script. Input data are stored in the siber_data_total.csv and iso_niche_data.csv files. See the script for details. This includes the estimation of host tissue and Symbiodiniaceae standard ellipse areas corrected for sample size (SEAc) and the calculation of SEAc overlap. Further, the distance between SEAc centroids is calculated and the residual permutation test to assess significance of trophic niche separation is carried out. This script relies on a source code by Turner et al. (2010; see README.md of main repository page), which is the Turner.et.al.ecology.source.r script. It is read into R in the SIBER_script_total.R script.
+The `R` file [Fig_3C.R](Fig_3C.R) is used to perform Canonical Analysis of Principal coordinates (CAP) and ANOSIM analysis and plot the data shown in Figure 3C in the manuscript.
+
+The `R` file [Fig_4A_S8.R](Fig_4A_S8.R) is used to perform Stable Isotope Bayesian Ellipses (SIBER) Analysis for stable isotope data and to plot the data shown in Figure 4A and Supplemenmtary Figure S8 in the manuscript.
+
+The `R` file [Fig_4B.R](Fig_4B.R) is used to perform linear regression analysis and plot the data shown in Figure 4B in the manuscript.
+
+The `R` file [Fig_S4.R](Fig_S4.R) is used to plot the _nifH_ data as shown in Supplementary Figure S4 in the mansucript. It denotes statistical differences between seasons as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
+
+The `R` file [Fig_S7.R](Fig_S7.R) is used to plot the isotopic data as shown in Supplementary Figure S7 in the mansucript. It denotes statistical differences between seasons for each parameter as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
