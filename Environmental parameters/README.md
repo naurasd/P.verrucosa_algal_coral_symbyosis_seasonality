@@ -33,7 +33,7 @@ The file [Environmental Data file Tilstra et al.xlsx](Environmental%20Data%20fil
   - For water temperature and monthly recorded parameters, mean and SEM were calculated for all measurements of each month
   - For bimonthly recorded parameters, mean and SEM were calculated for all measurements of each of the months data was recorded in
  
-The `R` file [Fig_1C-J_S1_S2.R](Fig_1C-J_S1_S2.R) is used to plot the environmental data as shown in Figure 1C-J and Supplementary Figures S1 and S2. It denotes statistical differences between seasons for each parameter as assessed in [Environmental_parameters_ANOVA_KW_Welch.R](Environmental_parameters_ANOVA_KW_Welch.R).
+The `R` file [Fig_1C-J_S1_S2.R](Fig_1C-J_S1_S2.R) is used to plot the environmental data as shown in Figure 1C-J and Supplementary Figures S1 and S2 in the manuscript. It denotes statistical differences between seasons for each parameter as assessed in [Environmental_parameters_ANOVA_KW_Welch.R](Environmental_parameters_ANOVA_KW_Welch.R).
  
-The `R` file [Fig_S3.R](Fig_S3.R) is used to analyze and plot the environmental data as shown in Supplementary Figure S3. It assesses collinearity among environmental paramaters that exhibited seasonal variability (see analysis above) through Pearson correlations and also plots the results. The script also performs hierarchical clustering and plots a corresponding dendrogram, further illustrating collinearity structure among environmental parameters.
+The `R` file [Fig_S3.R](Fig_S3.R) is used to analyze and plot the environmental data as shown in Supplementary Figure S3 in the manuscript. It assesses collinearity among environmental paramaters that exhibited seasonal variability (see analysis above) through Pearson correlations and also plots the results. The script also performs hierarchical clustering and plots a corresponding dendrogram, further illustrating collinearity structure among environmental parameters.
  
