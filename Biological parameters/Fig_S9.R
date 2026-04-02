@@ -5,7 +5,7 @@ library(tidyverse)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # Read the data
-df <- read_excel("raw data/Algal symbiont data + nifH.xlsx", sheet = "nifH")
+df <- read_excel("Algal symbiont data + nifH.xlsx", sheet = "nifH")
 
 # 16S Ct value averages are in the 6th column, rename it to "Ct"
 
