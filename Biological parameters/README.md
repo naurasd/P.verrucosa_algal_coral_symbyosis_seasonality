@@ -20,7 +20,7 @@ The file [Biological Data file Tilstra et al.xlsx](Biological%20Data%20file%20Ti
 - The sheet `bio + env data` contains all data of biological and environmental parameters formatted for Pearson correlation analysis
   
 - The sheet `season_mean_sem_bio` contains the seasonal mean and standard error of the mean (SEM) for all biological parameters
- 
+
 The `R` file [Fig_2B-D.R](Fig_2B-D.R) is used to plot the biological data as shown in Figure 2B-D in the mansucript. It denotes statistical differences between seasons for each parameter as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
  
 The `R` file [Fig_2E_S5.R](Fig_2E_S5.R) is used to analyze and plot the biolgical and environmental data as shown in Figure 2E and Supplementary Figure S5 in the manuscript. It assesses correlation between environmental and biological paramaters and also plots the results.
@@ -38,3 +38,5 @@ The `R` file [Fig_4B.R](Fig_4B.R) is used to perform linear regression analysis 
 The `R` file [Fig_S4.R](Fig_S4.R) is used to plot the _nifH_ data as shown in Supplementary Figure S4 in the mansucript. It denotes statistical differences between seasons as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
 
 The `R` file [Fig_S7.R](Fig_S7.R) is used to plot the isotopic data as shown in Supplementary Figure S7 in the mansucript. It denotes statistical differences between seasons for each parameter as assessed in [Biological_parameters_ANOVA_KW_Welch.R](Biological_parameters_ANOVA_KW_Welch.R).
+
+The file [Algal symbiont data + nifH.xlsx[(Algal%20symbiont%20data%20%2B%20nifH.xlsx) is the same file as in the Raw Data directory, and is only used as input data for [Fig_S9.R](Fig_S9.R) to plot mean and standard error for 16S rRNA gene qPCR values as shown in Supplemenmtary Figure S9 in the manuscript.
