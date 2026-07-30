@@ -10,6 +10,11 @@
 #       - else: classical ANOVA + Tukey
 #    Else:
 #       Kruskal–Wallis + Dunn (Bonferroni)
+
+# Important:
+# δ15N host tissue and δ15N algal symbiont are expressed
+# in per mille (‰), not as percentages or proportions.
+# Logit transformation is therefore excluded for these variables.
 ############################################################
 
 ############################################################
@@ -80,6 +85,17 @@ games_howell_test <- function(df, var, group_var = "Season") {
 looks_like_percent <- function(x, var_name) {
   z <- x[!is.na(x)]
   if (length(z) < 3) return(FALSE)
+  
+  # Explicitly exclude stable-isotope values expressed in per mille (‰)
+  isotope_variables_excluded_from_logit <- c(
+    "δ15N host tissue",
+    "δ15N algal symbiont"
+  )
+  
+  if (var_name %in% isotope_variables_excluded_from_logit) {
+    return(FALSE)
+  }
+  
   if (grepl("%|percent|percentage", var_name, ignore.case = TRUE)) return(TRUE)
   if (min(z) >= 0 && max(z) <= 1) return(TRUE)
   if (min(z) >= 0 && max(z) <= 100) return(TRUE)
